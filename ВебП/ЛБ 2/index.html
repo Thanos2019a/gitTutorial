@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Список користувачів</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		/* Общие стили */
+body {
+  font-family: sans-serif;
+  background-color: #7C8F80;
+  margin: 0;
+}
+h1 {
+  margin: 30px 0;
+  text-align: center;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.col {
+  flex: 1;
+  padding: 10px;
+}
+/* Стили для карточек */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background-color: #9BAA9E;
+}
+.card:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+.card-img-top {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+.card-body {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .col {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .col {
+    flex-basis: 100%;
+  }
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Список користувачів</h1>
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Фото користувача">
+					<div class="card-body">
+						<h5 class="card-title">Іван Іванов</h5>
+						<p class="card-text">Email адреса: ivanov@gmail.com</p>
+						<p class="card-text">Адреса проживання: м. Київ, вул. Шевченка, 10</p>
+						<p class="card-text">Телефон: +380 50 123 45 67</p>
+						<p class="card-text">Адреса WEB сайту: ivanov.com.ua</p>
+						<p class="card-text">Інформація про компанію: ТОВ "Рога і копита"</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Фото користувача">
+					<div class="card-body">
+						<h5 class="card-title">Марія Петренко</h5>
+						<p class="card-text">Email адреса: petrenko@gmail.com</p>
+						<p class="card-text">Адреса проживання: м. Львів, вул. Бандери, 15</p>
+						<p class="card-text">Телефон: +380 67 987 65 43</p>
+						<p class="card-text">Адреса WEB сайту: petrenko.com.ua</p>
+						<p class="card-text">Інформація про компанію: ПП "Петренко-Груп"</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Фото користувача">
+					<div class="card-body">
+						<h5 class="card-title">Марія Петренко</h5>
+						<p class="card-text">Email адреса: petrenko@gmail.com</p>
+						<p class="card-text">Адреса проживання: м. Львів, вул. Бандери, 15</p>
+						<p class="card-text">Телефон: +380 67 987 65 43</p>
+						<p class="card-text">Адреса WEB сайту: petrenko.com.ua</p>
+						<p class="card-text">Інформація про компанію: ПП "Петренко-Груп"</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Фото користувача">
+					<div class="card-body">
+						<h5 class="card-title">Марія Петренко</h5>
+						<p class="card-text">Email адреса: petrenko@gmail.com</p>
+						<p class="card-text">Адреса проживання: м. Львів, вул. Бандери, 15</p>
+						<p class="card-text">Телефон: +380 67 987 65 43</p>
+						<p class="card-text">Адреса WEB сайту: petrenko.com.ua</p>
+						<p class="card-text">Інформація про компанію: ПП "Петренко-Груп"</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
