@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">My Website</div>
+        <button class="menu-toggle"><span></span></button>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>-_-_-_-_-_-_-_-_-_-</p>
+    </div>
+
+    <?php
+    // Get the user's IP address
+    $ip_address = $_SERVER['REMOTE_ADDR'];
+
+    // Get the user's browser information
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+    // Get the user's referring URL (if any)
+    $referrer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
+
+    // Output the information to the screen
+    echo "<section>";
+    echo "<div class='content'>";
+    echo "<h2>User Information</h2>";
+    echo "<p>IP Address: " . $ip_address . "</p>";
+    echo "<p>Browser: " . $user_agent . "</p>";
+    echo "<p>Referrer: " . $referrer . "</p>";
+    echo "</div>";
+    echo "</section>";
+    ?>
+
+    <script src="script.js"></script>
+</body>
+</html>
